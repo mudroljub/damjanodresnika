@@ -5,6 +5,13 @@
   font-display: swap;
   src: url("fonts/chiller.ttf") format("truetype");
 }
+@font-face {
+  font-family: CyrillicOldFace;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/cyrillicoldface.ttf") format("truetype");
+}
 :root {
   --color-canvas: #050505;
   --color-surface: #121212;
@@ -120,15 +127,14 @@ figcaption {
 }
 .site-header.page-header { position: relative; background: var(--color-canvas); }
 .brand {
-  display: block;
-  width: auto;
-  height: 48px;
-  aspect-ratio: 808 / 268;
-  background: center / contain no-repeat url("images/logo.webp");
-  font-size: 0;
+  color: var(--color-text);
+  font-family: CyrillicOldFace, var(--font-display);
+  font-size: 1.75rem;
+  line-height: 1;
   text-decoration: none;
+  white-space: nowrap;
 }
-.brand img { display: block; width: 100%; height: auto; }
+.brand-mark { color: var(--color-brand-mark); }
 .nav, .footer-links, .socials, .hero-album-covers, .album-meta {
   display: flex;
   flex-wrap: wrap;
