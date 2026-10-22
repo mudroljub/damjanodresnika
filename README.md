@@ -4,5 +4,4 @@ Damjan od Resnika, muzički projekat koji okuplja prijatelje radi sviranja autor
 
 ## TODO
 
-- daman-kosa.jpg probati u galeriju
 - prepoznati font obnova i izgradnja
