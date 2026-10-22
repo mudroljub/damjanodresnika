@@ -10,5 +10,4 @@ Damjan od Resnika, muzički projekat koji okuplja prijatelje radi sviranja autor
   - obnova i izgradnja ima drugačije dimenzije
 - probati mali header logo cyrillicoldface
 - daman-kosa.jpg probati u galeriju
-- nestale ikonice linkova iz footera na nekim stranicama
 - prepoznati font obnova i izgradnja
