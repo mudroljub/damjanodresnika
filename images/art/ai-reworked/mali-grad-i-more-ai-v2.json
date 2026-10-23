@@ -1,0 +1,23 @@
+{
+  "original_artist": "Uroš Pejčić",
+  "derivation": "AI background development around original portrait, not an original artwork by Uroš Pejčić.",
+  "sources": [
+    {
+      "path": "images/art/pesme/mali.png",
+      "role": "Edit target; preserve head, gaze, facial shapes, neck shadow and shoulder portrait"
+    },
+    {
+      "path": "images/art/ai-reworked/klupko2-gradska-senke-ai-v1.png",
+      "role": "Restrained rework and background texture example"
+    },
+    {
+      "path": "lyrics/mali.txt",
+      "role": "Song meaning"
+    }
+  ],
+  "music_context": "User describes newer version as acoustic street band with accordion, gypsy punk; no audio listening performed.",
+  "correction": "User rejected v1: unnecessary new body and unnatural pose. This version preserves the head-and-shoulders format and develops the environment.",
+  "tool": "Built-in image_gen.imagegen",
+  "prompt": "Edit the FIRST attached image (original drawing mali.png). The SECOND image is ONLY an example of the desired restrained rework approach and background texture; do NOT import its woman, pose, face, moon, or composition.\n\nCRITICAL: preserve the actual original head-and-shoulders portrait in image 1 as faithfully as possible. It is NOT a character design reference to reinterpret. Keep the SAME drawn lines, same head tilt, same direction of gaze, exact almond-eye shapes and asymmetry, tiny mouth, jaw, triangular neck shadow, massive jagged black hair silhouette, and the two original bare shoulder outlines. Maintain original portrait proportions and frontal head/shoulder relationship. Keep it a cropped head-and-shoulders portrait. NO added arms, hands, legs, seated body, clothes, gestures, altered pose or anatomical reconstruction. Do not enlarge or exaggerate its existing stylization, do not turn it into a caricature. Minimal intervention within the original drawing; concentrate virtually all new work in the background. Keep the portrait flat, white-faced, graphically simple as in the original, with at most subtle paper texture. Do not model it into 3D or give it realistic eyes or a detailed nose.\n\nDevelop the empty white surroundings into a sensitive black-and-white pencil/ink/rough wash environment, following the second image's relationship between a preserved original line drawing and a richer atmospheric background. The portrait must remain the main subject at essentially the same dominant scale as image 1. You may widen the paper canvas a little for breathing room, without stretching or rotating the original. Behind and around the portrait: a modest, worn working-class city at night, rough plaster, a few dark apartment blocks and tiny lit windows, drawn by hand with controlled uneven hatching and mottled grayscale wash. Leave light separation around the black hair so its silhouette stays legible. On one side in the distant background, the city opens into a small pale quiet sea horizon with a few loose horizontal water marks: a subtle daydream of escape, integrated into the environment, not a huge portal and not a collage panel. No sun or moon is necessary. Do not fill every bit of paper with detail. Preserve the original shoulder crop as a deliberate portrait crop; let the bottom edge run out naturally, without drawing a new torso.\n\nSong context “Mali”: a young man works all day for food and rent, lacks money and a car, dreams of a warm life beside the sea, is misunderstood, but when alone at night has the gift of seeing that everything could be different. Convey ordinary pressure and private possibility mainly through the surroundings; do not change his existing facial expression. The user describes the newer music as an acoustic street band with accordion, gypsy punk: scrappy, direct and human; this is mood context, not a request for instruments or decorative ethnic motifs.\n\nGrayscale only, opaque paper. No text, titles, lyrics, signatures, logos, borders, extra people, ornament, new symbols, polished vector curves, generic gothic scenery or cinematic rendering. The result must look like the ORIGINAL DRAWING placed within a developed environment, not a new drawing of a similar person. Deliver one finished illustration.",
+  "review": "Visually checked against original: recognizable head tilt, eyes, mouth, black hair silhouette and neck shadow retained; no limbs or new pose. Background adds worn city and distant sea. Generative rendering is not a pixel-identical composite."
+}

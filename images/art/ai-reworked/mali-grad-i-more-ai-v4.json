@@ -1,0 +1,12 @@
+{
+  "original_artist": "Uroš Pejčić",
+  "derivation": "AI rework, not an original by Uroš Pejčić.",
+  "source": "images/art/ai-reworked/mali-grad-i-more-ai-v3.png",
+  "original": "images/art/pesme/mali.png",
+  "lyrics": "lyrics/mali.txt",
+  "music_context": "User-described acoustic street band with accordion, gypsy punk; no audio listening performed.",
+  "request": "Move portrait to lower right corner.",
+  "tool": "Built-in image_gen.imagegen",
+  "prompt": "Edit the supplied artwork with ONE composition change: move the EXISTING head-and-shoulders portrait into the LOWER RIGHT CORNER. Translate the portrait to the right, keeping approximately the same size as in this input, same head tilt and same gaze direction. Anchor the shoulders to the bottom and right image edges. The center of his face should sit around 78% of image width and 76% of image height, with his hair occupying the right-hand region above it; it must clearly read as a lower-right portrait, NOT centered. Keep the current canvas aspect ratio and do not zoom in.\n\nPreserve the actual existing drawn character as faithfully as possible: identical uneven tall black spiked hair, narrow tilted face, large black almond eyes with tiny white triangular corners, small black mouth, exact expression, triangular black neck shadow, original shoulder contours and proportions. Do not mirror, rotate, change pose, redraw facial anatomy, add torso, limbs, hands, clothing, or exaggerate the stylization. Keep this as a cropped portrait.\n\nMaintain the same black-and-white ink/pencil/rough wash setting and atmosphere: worn apartment buildings and wall on the left, compressed rooftops, wires, small light windows, textured sky above, and a pale distant sea visible toward the right/background behind and above the shifted portrait. Naturally reconstruct the background where the portrait used to be. Keep adequate light-toned separation behind black hair. The rest of the scene should change only as necessary to accommodate the move. No new people, objects, lettering, symbols, border, watermark or signature. Deliver one finished image, visually the same artwork with the original portrait positioned in the lower right corner.",
+  "review": "Portrait now clearly in lower right, shoulder crop reaches bottom/right; face, tilted head and spiked hair remain recognizable. Background reconstructed in former portrait area. Generative edit, not pixel-identical translation."
+}

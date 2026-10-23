@@ -4,4 +4,12 @@ Damjan od Resnika, muzički projekat koji okuplja prijatelje radi sviranja autor
 
 ## TODO
 
-- prepoznati font obnova i izgradnja
+ART
+- napraviti novi cover za Malog
+- napraviti skil za crtanje
+- napraviti skil za animacije
+
+MUZIKA
+- dodati Pored vatre bonus track: Poznanja (instrumental)
+- dodati Music for Insomnia nakon objavljivanja
+- dodati preostale tekstove pesama

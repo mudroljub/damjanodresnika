@@ -1,0 +1,12 @@
+{
+  "original_artist": "Uroš Pejčić",
+  "derivation": "AI rework; wider framing of v2, not an original by Uroš Pejčić.",
+  "source": "images/art/ai-reworked/mali-grad-i-more-ai-v2.png",
+  "original": "images/art/pesme/mali.png",
+  "lyrics": "lyrics/mali.txt",
+  "music_context": "Retained from v2: user-described acoustic street band with accordion, gypsy punk; no listening performed.",
+  "request": "Character slightly farther away with more surrounding space.",
+  "tool": "Built-in image_gen.imagegen",
+  "prompt": "Edit the supplied illustration with ONE specific change: pull back the framing moderately so the existing character appears about 20–25 percent smaller relative to the image and has more breathing room. Preserve the same aspect ratio. Treat this as gently expanding the canvas/environment around the existing artwork, not redesigning the portrait.\n\nKeep the character's face, eyes, mouth, expression, head tilt, gaze, proportions, black spiked hair silhouette, triangular neck shadow and existing shoulder contours as faithfully as possible. Uniformly reduce the existing portrait; do not redraw it with a different face, pose or body. Keep the head-and-shoulders portrait format; no new arms, hands, legs, clothes, seated pose or extended anatomical torso. Keep the shoulder crop at the bottom edge by positioning the uniformly reduced portrait lower in the composition. Give the top of the hair modest breathing room, naturally completing only tiny spike tips if necessary; do not reinvent the hairstyle. Do not exaggerate stylization.\n\nShow more of the SAME existing environment around and above him: worn urban walls, compressed apartment rooftops, wires, small pale windows, textured grayscale night sky, and the distant pale sea opening on the right. Retain the original image's composition, dark-to-light balance, setting and atmosphere as far as the wider framing allows. Extend it continuously with matching rough ink/pencil/wash texture, no frame or pasted inset effect. The sea remains a background hint, not the dominant subject. No extra people or props. Black and white only; no lettering, signatures, logos, or new symbols. The result should look like a slightly wider view of the supplied illustration, preserving its drawing.",
+  "review": "Visually checked: portrait smaller, substantial sky above hair, more environment visible; no new limbs or pose. Generative edit, not pixel-identical rescaling."
+}

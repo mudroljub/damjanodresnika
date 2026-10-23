@@ -1,0 +1,4 @@
+interface:
+  display_name: "art-rework"
+  short_description: "Novi crteži i animacije u Uroševom rukopisu"
+  default_prompt: "Koristi $art-rework da od Uroševog originala napraviš novi crtež ili animaciju uz očuvanje njegovog prepoznatljivog stila."
