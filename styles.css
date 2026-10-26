@@ -80,14 +80,14 @@ figcaption {
 }
 
 /* Shared type, color, and spacing utilities. */
-.type-label, .album-year, .hero-kicker, .lyric-trigger, .lyrics-credit {
+.type-label, .album-year, .tracks-label, .hero-kicker, .lyric-trigger, .lyrics-credit {
   font-size: var(--type-size-label);
   font-weight: 700;
   line-height: 1.4;
 }
 .type-label, .hero-kicker, .lyric-trigger, .lyrics-credit { color: var(--color-link); }
 .type-meta, .text-muted, .album-status,
-.art-credit, .track-number, .album-year {
+.art-credit, .track-number, .album-year, .tracks-label {
   color: var(--color-text-muted);
 }
 .text-emphasis { color: var(--color-emphasis); }
@@ -433,19 +433,21 @@ h1 { margin-bottom: 1.5rem; }
 .tracks { margin: 0; padding: 0; list-style: none; }
 .track {
   display: grid;
-  grid-template-columns: 2.3rem minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-line);
 }
-.track-number { font-size: 0.8rem; }
+.track-number { display: none; }
 .tracks-label {
   margin-top: 1rem;
   padding: 0.75rem 0 0.25rem;
-  color: var(--color-text-muted);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+}
+@media (min-width: 1000px) {
+  .tracks { columns: 2; column-gap: 4.5rem; }
+  .track { break-inside: avoid; }
+  .tracks-label { break-after: avoid; }
 }
 .play-track {
   display: flex;
@@ -730,7 +732,6 @@ h1 { margin-bottom: 1.5rem; }
   .musicians-gallery .art-stack { columns: 2; }
   .musicians-gallery h2 { font-size: 2.5rem; }
   .site-footer { flex-direction: column; gap: 1rem; }
-  .track { grid-template-columns: 2.3rem minmax(0, 1fr) auto auto; }
   .lyrics-dialog { width: 100vw; max-width: none; height: 100svh; max-height: 100svh; border: 0; }
   .lyrics-header { padding: 1.25rem 1.25rem 0.75rem; }
   .lyrics-body { padding: 1.5rem 1.25rem 2rem; }
