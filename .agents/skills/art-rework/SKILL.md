@@ -49,7 +49,7 @@ Kada je rad tematski vezan za pesmu ili album, tekst i muzika su obavezni izvori
 - Poveži tekst i zvuk u kratku likovnu zamisao: šta nosi emociju i kako se to vidi prvenstveno u okolini, prostoru, kontrastu i gustini crteža, uz očuvanje postojećeg gesta. Uvaži i napetost između reči i muzike, na primer vedar ritam uz teskoban tekst, umesto automatskog biranja mračnog prizora.
 - Za animaciju uz muziku prilagodi pokret, trajanje kadrova i prelaze njenim frazama i promenama energije; sinhronizaciju zasnivaj na stvarnom snimku i vremenskim oznakama. Ne izmišljaj tempo ili trenutke naglasaka.
 
-U zahtev za generisanje prenesi ovu likovnu zamisao i njenu vezu sa pesmom ili albumom, uz konkretne stilske osobine originala. U završnoj proveri proceni i da li slika ili pokret odgovaraju tekstu i zvuku; u pratećem zapisu navedi korišćeni tekst, snimak/verziju i odlomak ako se rad odnosi na deo pesme.
+U zahtev za generisanje prenesi ovu likovnu zamisao i njenu vezu sa pesmom ili albumom, uz konkretne stilske osobine originala. U završnoj proveri proceni i da li slika ili pokret odgovaraju tekstu i zvuku. Korišćene izvore i verziju pesme po potrebi navedi u razgovoru.
 
 ## Novi crtež ili prerada
 
@@ -88,4 +88,4 @@ Uporedi rezultat sa originalom, a ne samo sa AI preradom: jesu li sačuvani konk
 
 Originale ne prepisuj. U ovom projektu nove slike podrazumevano čuvaj u `images/art/ai-reworked` kao `<izvor>-<kratak-opis>-ai-vN.png`; za animacije koristi `images/art/ai-reworked/animations` i odgovarajuću ekstenziju, osim kada korisnik odredi drugo mesto. Proveri zauzetost imena pre upisa. Ne dodaj rezultat na sajt bez zahteva koji obuhvata tu izmenu.
 
-Uz konačan rezultat ostavi kratak prateći zapis sa izvornim putanjama, njihovim ulogama, konačnim promptom, korišćenim alatom i bitnim parametrima animacije kada postoje. Razlikuj originalno autorstvo Uroša Pejčića od AI prerade; ne pripisuj nov rezultat autoru kao njegov original. Korisniku kratko navedi šta je napravljeno i gde se nalazi.
+Ne pravi automatski prateće JSON fajlove, zapise o promptovima ili drugu dokumentaciju uz slike. Takve fajlove čuvaj samo kada korisnik to traži; potrebne informacije inače prenesi u razgovoru. Razlikuj originalno autorstvo Uroša Pejčića od AI prerade; ne pripisuj nov rezultat autoru kao njegov original. Korisniku kratko navedi šta je napravljeno i gde se nalazi.
