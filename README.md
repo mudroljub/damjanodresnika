@@ -11,5 +11,4 @@ ART
 
 MUZIKA
 - dodati Pored vatre bonus track: Poznanja (instrumental)
-- dodati Music for Insomnia nakon objavljivanja
 - dodati preostale tekstove pesama
