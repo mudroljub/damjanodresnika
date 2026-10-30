@@ -12,3 +12,4 @@ ART
 MUZIKA
 - dodati Pored vatre bonus track: Poznanja (instrumental)
 - dodati preostale tekstove pesama
+- provući snimke sa prnjavorstocka kroz ai
