@@ -122,7 +122,7 @@
             Damjan od Resnika, počeo kao kantautor, postao muzički projekat koji
             okuplja prijatelje radi sviranja autorskih pesama.
           </p>
-          <div class="hero-album-covers" aria-label="Izdvojeni albumi">
+          <div class="hero-album-covers" id="album-slider" role="region" aria-label="Albumi" tabindex="0">
             <a href="diskografija.html#pored-vatre">
               <picture><source srcset="images/optimized/pored-vatre.avif" type="image/avif" /><img
                 src="images/art/releases/pored-vatre.png"
@@ -163,6 +163,10 @@
                 decoding="async"
               /></picture>
             </a>
+          </div>
+          <div class="album-slider-controls" hidden>
+            <button class="album-slider-prev" type="button" aria-label="Prethodni albumi" aria-controls="album-slider">&#8249;</button>
+            <button class="album-slider-next" type="button" aria-label="Sledeći albumi" aria-controls="album-slider">&#8250;</button>
           </div>
           <a class="hero-link" href="diskografija.html"
             >Poslušaj diskografiju</a
@@ -649,6 +653,7 @@
         >
       </div>
     </footer>
+    <script src="album-slider.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>

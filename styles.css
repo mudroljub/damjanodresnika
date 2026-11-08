@@ -191,14 +191,22 @@ figcaption {
 h1 { margin-bottom: 1.5rem; }
 .hero h1 { max-width: 780px; margin-bottom: 1.5rem; font-size: 10rem; }
 .hero-album-covers {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  align-items: start;
+  display: flex;
+  align-items: flex-start;
   gap: 0.75rem;
   margin-top: 1.5rem;
+  padding-block: 0.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-emphasis) transparent;
 }
 .hero-album-covers a {
   display: block;
+  flex: 0 0 calc((100% - 2.25rem) / 4);
+  min-width: 0;
+  scroll-snap-align: start;
   border: 1px solid rgba(236, 235, 231, 0.35);
   transition: border-color var(--duration-fast) ease, transform var(--duration-fast) ease;
 }
@@ -211,6 +219,22 @@ h1 { margin-bottom: 1.5rem; }
   aspect-ratio: 1;
   object-fit: fill;
 }
+.hero-album-covers .album-cover-fit { object-fit: contain; background: var(--color-canvas); }
+.hero-album-covers a:focus-visible { outline-offset: -3px; }
+.album-slider-controls { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 0.75rem; }
+.album-slider-controls[hidden] { display: none; }
+.album-slider-controls button {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--color-line);
+  background: var(--color-canvas);
+  color: var(--color-text);
+  font-size: 2rem;
+  line-height: 1;
+}
+.album-slider-controls button:hover:not(:disabled) { border-color: var(--color-emphasis); color: var(--color-emphasis); }
+.album-slider-controls button:disabled { opacity: 0.35; cursor: default; }
 .hero-album-covers a:hover, .hero-album-covers a:focus-visible {
   border-color: var(--color-emphasis);
   transform: translateY(-0.2rem);
@@ -734,7 +758,7 @@ h1 { margin-bottom: 1.5rem; }
   .nav a { font-size: 0.75rem; }
   .hero { min-height: 670px; }
   .hero h1 { font-size: 5rem; }
-  .hero-album-covers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-album-covers a { flex-basis: 72%; }
   .player { grid-template-columns: auto minmax(0, 1fr) auto; }
   .now-playing:not(:has(.track-name:empty)) .now-label { display: none; }
   .about-grid { grid-template-columns: 1fr; }
@@ -760,6 +784,7 @@ h1 { margin-bottom: 1.5rem; }
   .player { gap: 0.75rem; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .hero-album-covers { scroll-behavior: auto; }
   html { scroll-behavior: auto; }
   .gallery-item img { transition: none; }
 }
