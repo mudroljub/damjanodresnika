@@ -25,5 +25,6 @@ if (albumSlider) {
     moveAlbums(event.key === "ArrowLeft" ? -1 : 1);
   });
   new ResizeObserver(updateAlbumControls).observe(albumSlider);
+  albumSlider.scrollTo({ left: albumSlider.scrollWidth, behavior: "instant" });
   updateAlbumControls();
 }
