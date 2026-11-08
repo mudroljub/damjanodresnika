@@ -6,3 +6,4 @@ Damjan od Resnika, muzički projekat koji okuplja prijatelje radi sviranja autor
 
 MUZIKA
 - dodati preostale tekstove pesama
+- praviti spotove
