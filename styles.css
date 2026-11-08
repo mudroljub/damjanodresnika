@@ -135,7 +135,7 @@ figcaption {
   white-space: nowrap;
 }
 .brand-mark { color: var(--color-brand-mark); }
-.nav, .footer-links, .socials, .hero-album-covers, .album-meta {
+.nav, .footer-links, .socials, .album-meta {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -180,14 +180,25 @@ figcaption {
   object-position: center 42%;
   filter: saturate(0.78) contrast(1.08);
 }
-.hero-content { position: relative; z-index: 2; max-width: 900px; }
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(100%, var(--content-width));
+  min-width: 0;
+  margin-inline: auto;
+}
 .hero-kicker { margin: 0 0 1rem; }
 h1 { margin-bottom: 1.5rem; }
 .hero h1 { max-width: 780px; margin-bottom: 1.5rem; font-size: 10rem; }
-.hero-album-covers { gap: 0.75rem; margin-top: 1.5rem; }
+.hero-album-covers {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
 .hero-album-covers a {
   display: block;
-  width: var(--edition-art-size);
   border: 1px solid rgba(236, 235, 231, 0.35);
   transition: border-color var(--duration-fast) ease, transform var(--duration-fast) ease;
 }
@@ -195,6 +206,10 @@ h1 { margin-bottom: 1.5rem; }
   display: block;
   width: 100%;
   height: auto;
+}
+.hero-album-covers img {
+  aspect-ratio: 1;
+  object-fit: fill;
 }
 .hero-album-covers a:hover, .hero-album-covers a:focus-visible {
   border-color: var(--color-emphasis);
@@ -719,6 +734,7 @@ h1 { margin-bottom: 1.5rem; }
   .nav a { font-size: 0.75rem; }
   .hero { min-height: 670px; }
   .hero h1 { font-size: 5rem; }
+  .hero-album-covers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .player { grid-template-columns: auto minmax(0, 1fr) auto; }
   .now-playing:not(:has(.track-name:empty)) .now-label { display: none; }
   .about-grid { grid-template-columns: 1fr; }
