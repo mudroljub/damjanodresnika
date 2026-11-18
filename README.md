@@ -5,5 +5,6 @@ Damjan od Resnika, muzički projekat koji okuplja prijatelje radi sviranja autor
 ## TODO
 
 MUZIKA
+- dodati lyrics\poznanja.txt
 - dodati preostale tekstove pesama
 - praviti spotove
